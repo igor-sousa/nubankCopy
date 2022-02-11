@@ -21,6 +21,57 @@ ion-header {
   }
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+ion-content {
+  .background {
+    .bank-information {
+      .qrcode {
+        width: 100px;
+        margin: 16px auto;
+        display: block;
+      }
+
+      span {
+        margin: 5px 0;
+        font-size: 14px;
+        display: block;
+      }
+    }
+
+    ion-list {
+      margin-top: 25px;
+      background: transparent;
+
+      ion-item {
+        &:first-of-type {
+          border-top: 0.55px solid rgba(255, 255, 255, 0.7);
+        }
+        font-size: 16px;
+        color: white;
+        --background: transparent;
+        --detail-icon-opacity: 1;
+        ion-icon {
+          color: white;
+        }
+      }
+    }
+
+    .logout {
+      margin-top: 32px;
+      margin-bottom: 100px;
+    }
+  }
+}
+
 ion-footer {
   ion-slide {
     .container {

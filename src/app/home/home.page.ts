@@ -15,10 +15,18 @@ export class HomePage {
     {icon: 'help-circle-outline', text: 'Me ajuda'},
     {icon: 'barcode-outline', text: 'Pagar'},
     {icon: 'lock-open-outline', text: 'Bloquear cartão'},
-    {icon: 'card-outline', text: 'Cartão virtual'},
+    {icon: 'card-outline', text: 'Cartão virtual'}
   ];
 
   public slidesOpts: any = {slidesPerView: 3, freeMode: true};
+
+  public items: Array<any> = [
+    {icon: 'help-circle-outline', text: 'Me ajuda'},
+    {icon: 'person-outline', text: 'Perfil'},
+    {icon: 'cash-outline', text: 'Configurar conta'},
+    {icon: 'card-outline', text: 'Configurar cartão'},
+    {icon: 'phone-portrait-outline', text: 'Configurações do app'}
+  ];
 
   constructor() {}
 
