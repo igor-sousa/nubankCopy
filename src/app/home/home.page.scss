@@ -21,18 +21,10 @@ ion-header {
   }
 }
 
-::-webkit-scrollbar {
-  width: 12px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: transparent;
-}
-
 ion-content {
   .background {
+    opacity: 0;
+    display: none;
     .bank-information {
       .qrcode {
         width: 100px;
@@ -68,6 +60,30 @@ ion-content {
     .logout {
       margin-top: 32px;
       margin-bottom: 100px;
+    }
+  }
+  .blocks {
+    ion-card {
+      .cash {
+        span {
+          &.value {
+            font-size: 30px;
+            display: block;
+          }
+
+          &.blue {
+            color: #0ab;
+          }
+
+          &.green {
+            color: #94c22b;
+          }
+        }
+      }
+
+      .footer {
+        background: #f4f5f8;
+      }
     }
   }
 }
