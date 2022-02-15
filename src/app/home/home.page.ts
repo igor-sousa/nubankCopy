@@ -28,6 +28,13 @@ export class HomePage {
     {icon: 'phone-portrait-outline', text: 'Configurações do app'}
   ];
 
+  public isHide = false;
+
   constructor() {}
+
+  public hideValues(): void {
+    this.isHide = !this.isHide;
+    console.log('botao foi clicado.');
+  }
 
 }

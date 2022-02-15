@@ -55,6 +55,30 @@
         </div>
       </ion-card-content>
     </ion-card>
+
+    <ion-card>
+      <ion-item class="ion-margin-vertical" lines="none">
+        <ion-icon slot="start" name="cash-outline"> </ion-icon>
+        <ion-icon slot="end" (click)="hideValues()" [name]="isHide ? 'eye-off-outline' : 'eye-outline'"></ion-icon>
+        <ion-label>Conta</ion-label>
+      </ion-item>
+
+      <ion-card-content class="ion-no-padding">
+        <div class="ion-padding ion-margin-vertical cash">
+          <span>Saldo disponível</span>
+          <ion-text color="dark" >
+            <span class="value" *ngIf="!isHide">R$ 1400,01</span>
+          </ion-text>
+        </div>
+
+        <div class="ion-padding-vertical footer">
+          <ion-item color="light" lines="none" detail>
+            <ion-icon slot="start" name="arrow-redo-outline"></ion-icon>
+            <ion-label class="ion-text-wrap">Transferência de R$ 50,00 enviada para Valdir</ion-label>
+          </ion-item>
+        </div>
+      </ion-card-content>
+    </ion-card>
   </div>
 
 </ion-content>
